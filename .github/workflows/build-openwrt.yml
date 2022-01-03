@@ -160,6 +160,7 @@ jobs:
       run: |
         cd openwrt
         make download -j8
+        git clone https://github.com/CHN-beta/xmurp-ua.git
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
     
